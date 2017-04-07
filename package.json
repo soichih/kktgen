@@ -1,0 +1,23 @@
+{
+  "name": "kktgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "kktgen": "./kktgen.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soichih/kktgen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soichih/kktgen/issues"
+  },
+  "homepage": "https://github.com/soichih/kktgen#readme",
+  "dependencies": {}
+}
