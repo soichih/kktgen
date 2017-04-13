@@ -45,7 +45,7 @@ fi
 grep "HPSS_PRINCIPAL" ~/.bashrc > /dev/null
 if [ $? -eq 0 ]; then
 	#looks like HPSS_PRINCIPAL is already configured in .bashrc
-	echo "Please add following to $HOME/.bashrc"
+	echo "Please add following to $HOME/.bashrc and restart terminal"
 	echo
 	echo "export HPSS_PRINCIPAL=$USERNAME"
 	echo "export HPSS_AUTH_METHOD=keytab"
@@ -57,5 +57,7 @@ else
 	echo "export HPSS_PRINCIPAL=$USERNAME" >> ~/.bashrc
 	echo "export HPSS_AUTH_METHOD=keytab" >> ~/.bashrc
 	echo "export HPSS_KEYTAB_PATH=$HOME/.ssh/hpss.keytab" >> ~/.bashrc
+
+	echo "Updated your ~/.bashrc. Please restart terminal"
 fi
 
