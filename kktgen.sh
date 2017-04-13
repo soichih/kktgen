@@ -52,6 +52,8 @@ if [ $? -eq 0 ]; then
 	echo "export HPSS_KEYTAB_PATH=$HOME/.ssh/hpss.keytab"
 else
 	#not there.. add exports to .bashrc
+	echo "" >> ~/.bashrc
+	echo "#### added by kktgen #####" >> ~/.bashrc
 	echo "export HPSS_PRINCIPAL=$USERNAME" >> ~/.bashrc
 	echo "export HPSS_AUTH_METHOD=keytab" >> ~/.bashrc
 	echo "export HPSS_KEYTAB_PATH=$HOME/.ssh/hpss.keytab" >> ~/.bashrc
