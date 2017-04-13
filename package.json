@@ -1,8 +1,8 @@
 {
   "name": "kktgen",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Easy Kerberos Keytab Generator",
+  "main": "kktgen.sh",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/soichih/kktgen.git"
   },
-  "author": "",
+  "author": "Soichi Hayashi <hayashis@iu.ed>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/soichih/kktgen/issues"
