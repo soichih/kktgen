@@ -1,6 +1,6 @@
 {
   "name": "kktgen",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy Kerberos Keytab Generator",
   "main": "kktgen.sh",
   "scripts": {

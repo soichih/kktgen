@@ -35,11 +35,15 @@ if [ $? -eq 0 ]; then
 	echo "Keytab successfully created."
 else
 	echo "Failed to create keytab. Common cause of errors are ..."
-	echo "You've entered a wrong password (try again)"
-	echo "You haven't created your SDA account created. (Create it at https://access.iu.edu/Accounts)"
+	echo "* You've entered a wrong password (try again)"
+	echo "* You haven't created your SDA account created. (Create it at https://access.iu.edu/Accounts)"
 	exit 1
 fi
 )
+#check subshell status
+if [ ! $? -eq 0 ]; then
+	exit 1
+fi
 
 #add exports to .bashrc
 grep "HPSS_PRINCIPAL" ~/.bashrc > /dev/null
