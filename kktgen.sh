@@ -27,6 +27,10 @@ INTER
 #test keytab
 (
 module load hpss > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echoo "hpss module is not available on this system.. can't test your key";
+	exit 1
+fi
 export HPSS_PRINCIPAL=$USERNAME
 export HPSS_AUTH_METHOD=keytab
 export HPSS_KEYTAB_PATH=$HOME/.ssh/hpss.keytab
